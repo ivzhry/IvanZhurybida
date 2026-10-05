@@ -1,0 +1,137 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* --- nav menu --- */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-nav a {
+    color: #aaa;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover, .main-nav a.active {
+    color: #6b1422;
+}
+
+/* --- head --- */
+.hero-section {
+    background: linear-gradient(135deg, #1a1a1a, #242424);
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #6b1422;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    color: #6b1422;
+    margin: 10px 0 5px 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #999;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* --- container and cards --- */
+.content-container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card {
+    background-color: #1a1a1a;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    border-left: 5px solid #6b1422;
+}
+
+.card h2 {
+    color: #6b1422;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.hobby-list {
+    padding-left: 20px;
+}
+
+.hobby-list li {
+    margin-bottom: 10px;
+}
+
+/* --- gallery  --- */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #333;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.03);
+    border-color: #6b1422;
+}
+
+/* --- addopted for phones  --- */
+@media (max-width: 768px) {
+    .photo-gallery {
+        grid-template-columns: 1fr;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+}
+
+}
