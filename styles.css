@@ -54,13 +54,12 @@ main {
 }
 
 .profile-img {
-    width: 160 px;
-    height: 160 px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3 px solid #8b1e2e;
-    box-shadow: 0 6 px 20 px rgba (0, 0, 0, 0.8);
-}
+    border: 3px solid var(--accent-color, #8b1e2e);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
 
 .hero-text h1 {
     color: #f0f0f0;
